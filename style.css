@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --black: #252525;
+  --light: #d3d3d3;
+  --red: #ff0000;
+  --primary: var(--red);
+  --shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--black);
+  color: var(--light);
+}
+
+/* Header */
+.header {
+  background-color: #282828;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-shadow: var(--shadow);
+}
+.header h1 {
+  text-transform: uppercase;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Lifts */
+.lifts {
+  margin-top: 2rem;
+}
+.lift {
+  display: flex;
+}
+.lift-title {
+  margin-bottom: 0.5rem;
+}
+.lift-img-container {
+  min-width: 30%;
+  margin-right: 4rem;
+  text-align: center;
+}
+.lift-img {
+  /* border: 1px solid var(--red); */
+  height: 200px;
+  width: 300px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.5rem;
+}
+.lift-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  background-color: #282828;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive queries for anything above tablet */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 70vw;
+  }
+}
